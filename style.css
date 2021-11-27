@@ -1,0 +1,25 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/fondo-land.jpeg);
+    background-position: center;
+    border: solid black 1px;
+    padding: 1px;
+    margin: 0;
+
+}
+
+header {
+    background-color: rgb(1, 164, 228);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+header h2 {
+    margin: 0 auto;
+    width: min-content;
+    color: white;
+}
