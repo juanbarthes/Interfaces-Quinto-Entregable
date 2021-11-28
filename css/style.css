@@ -1,10 +1,15 @@
-.login {
+body {
     width: 100vw;
     height: 100vh;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-position-y: 3px;
-    margin: 0;
     background-image: url(../images/fondo-land-2.jpeg);
+    margin: 0;
 }
 
 .form-label {
@@ -12,12 +17,16 @@
 }
 
 .register {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-position-y: 3px;
     margin: 0;
     background-color: #fafafa;
+}
+
+.container {
+    min-height: 100%;
 }
 
 header {
@@ -37,6 +46,27 @@ header h2 {
     text-shadow: 4px 4px 5px gray;
 }
 
+.menu {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 7px 7px -6px gray;
+}
+
+.feed {
+    max-height: 80%;
+    overflow-y: scroll;
+}
+
 .btn-enter {
     background-color: #44C1F2;
+    color: white;
+    font-weight: 500;
+}
+
+.icon {
+    color: #01a4e4;
+    font-size: 30px;
+    max-height: fit-content;
 }
