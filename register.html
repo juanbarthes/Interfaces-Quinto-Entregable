@@ -43,20 +43,23 @@
                         <input type="date" class="form-control" id="birth">
                     </div>
                     <div class="mb-3 col-8 m-auto">
-                        <p class="mb-0">Genero</p>
-                        <input type="radio" name="gender" id="man" value="man">
-                        <label for="man">Hombre</label>
-                        <input type="radio" name="gender" id="woman" value="woman">
-                        <label for="woman">Mujer</label>
-                        <input type="radio" name="gender" id="other" value="other">
-                        <label for="other">Otro</label>
+                        <!-- <p class="mb-0">Genero</p> -->
+                        <label for="radio-section" class="form-label">Género</label>
+                        <div id="radio-section">
+                            <input type="radio" name="gender" id="man" value="man">
+                            <label for="man" class="form-label">Hombre</label>
+                            <input type="radio" name="gender" id="woman" value="woman">
+                            <label for="woman" class="form-label">Mujer</label>
+                            <input type="radio" name="gender" id="other" value="other">
+                            <label for="other" class="form-label">Otro</label>
+                        </div>
                     </div>
-                    <div class="mb-3 col-8 m-auto mt-4">
+                    <div class="mb-3 col-8 m-auto">
                         <input type="checkbox" class="" id="vet" value="vet-checkbox">
                         <label for="vet" class="form-label">Soy Veterinario</label>
                     </div>
                     <div class="mb-3 col-8 m-auto">
-                        <button type="submit" class="btn btn-primary" id="login-submit">Registrar</button>
+                        <button type="submit" class="btn btn-enter" id="login-submit">Registrar</button>
                     </div>
                 </form>
             </div>
