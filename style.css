@@ -1,13 +1,19 @@
-body {
+.login {
     width: 100vw;
     height: 100vh;
-    background-image: url(images/fondo-land.jpeg);
     background-position: center;
     background-position-y: 3px;
-    border: solid black 1px;
-    padding: 1px;
     margin: 0;
+    background-image: url(images/fondo-land.jpeg);
+}
 
+.register {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-position-y: 3px;
+    margin: 0;
+    background-color: RGB(250, 250, 250);
 }
 
 header {
