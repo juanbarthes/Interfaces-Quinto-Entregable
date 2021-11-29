@@ -6,9 +6,9 @@ function init() {
     let loading = document.querySelector("#loading-section");
     let btnLoading = document.querySelector("#login-submit");
 
-    btnLoading.addEventListener('submit', function (e) {
-        e.preventDefault();
+    btnLoading.addEventListener('click', function (e) {
         console.log("entro");
+        e.preventDefault();
         login(e);
     });
 

@@ -22,19 +22,21 @@
             <p class="mx-3 fs-5 text-center ">Comunicate con profesionales y amantes de las mascotas de todo el mundo.
             </p>
             <div class="form-container">
-                <form method="POST" action="index.html">
-                    <div class="mb-3 col-8 m-auto">
+                <form>
+                    <div class="mb-1 col-8 m-auto">
                         <label for="email" class="form-label">Correo</label>
                         <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
                             placeholder="Ingrese su correo electrónico" required>
+                        <p class="error-text" id="email-error-info">Error en el correo electrónico</p>
                     </div>
-                    <div class="mb-3 col-8 m-auto">
+                    <div class="mb-2 col-8 m-auto">
                         <label for="password" class="form-label" minlength="8" name="password" maxlength="14">Contraseña</label>
                         <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña"
                             minlength="8" maxlength="14" required>
+                            <p class="error-text" id="password-error-info">Error en la contraseña</p>
                     </div>
                     <div class="mb-3 col-8 m-auto submit-section">
-                        <input type="submit" class="btn btn-enter" id="login-submit"></input>
+                        <input type="submit" class="btn btn-enter" id="login-submit" value="Enviar"></input>
                         <div id="loading-section" class="hidden">
                             <div class="spinner-border text-info" role="status">
                                 <span class="visually-hidden">Loading...</span>

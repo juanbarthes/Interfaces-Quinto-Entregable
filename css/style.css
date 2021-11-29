@@ -54,3 +54,8 @@ header h2 {
 #loading-section {
     display: inline-block;
 }
+
+.error-text {
+    margin: 0;
+    color: red;
+}
