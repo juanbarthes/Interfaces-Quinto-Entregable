@@ -31,7 +31,7 @@ body {
 
 header {
     background-color: #01a4e4;
-    height: 40px;
+    height: 45px;
     display: flex;
     align-items: center;
     width: 100% !important;
@@ -63,7 +63,24 @@ header h2 {
 .btn-enter {
     background-color: #44C1F2;
     color: white;
-    font-weight: 500;
+}
+
+#login-submit {
+    margin-top: -15px;
+    margin-right: 15px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#loading-section {
+    display: inline-block;
+}
+
+.error-text {
+    margin: 0;
+    color: red;
 }
 
 .icon {
