@@ -57,8 +57,13 @@ header h2 {
 
 .feed {
     max-height: 80%;
-    overflow-y: scroll;
 }
+
+.time-text {
+    font-size: small;
+}
+
+
 
 .btn-enter {
     background-color: #44C1F2;
@@ -86,5 +91,11 @@ header h2 {
 .icon {
     color: #01a4e4;
     font-size: 30px;
+    max-height: fit-content;
+}
+
+.card-icon {
+    color: #01a4e4;
+    font-size: 20px;
     max-height: fit-content;
 }
