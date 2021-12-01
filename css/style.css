@@ -1,6 +1,5 @@
 body {
     width: 100vw;
-    height: 100vh;
 }
 
 .login {
@@ -99,3 +98,22 @@ header h2 {
     font-size: 20px;
     max-height: fit-content;
 }
+
+.avatar-image {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem !important;
+    display: inline;
+    overflow: hidden !important;
+}
+
+.publication-carousel {
+    height: 15rem;
+    overflow-y: hidden;
+}
+
+.card-text {
+    
+    
+}
+
