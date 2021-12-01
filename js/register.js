@@ -5,10 +5,9 @@ function init() {
     /**
      * Vars
      */
-    let loginForm = document.querySelector("#login-form");
+    let registerForm = document.querySelector("#register-form");
     let loading = document.querySelector("#loading-section");
-    let btnLoading = document.querySelector("#login-submit");
-    let emailError = document.querySelector("#email-error-info");
+    let btnRegister = document.querySelector("#register-submit");
     let passwordError = document.querySelector("#password-error-info");
     let email = document.querySelector("#email");
     let password = document.querySelector("#password");
@@ -17,12 +16,12 @@ function init() {
     /**
      * Events
      */
-    loginForm.addEventListener('submit', function (e) {
+     registerForm.addEventListener('submit', function (e) {
         if (!passwordError.classList.contains('hidden')) {
             passwordError.classList.add('hidden');
         }
         e.preventDefault();
-        login(e);
+        register(e);
     });
 
 
@@ -31,7 +30,7 @@ function init() {
      */
 
 
-    function login(e) {
+    function register(e) {
         btnLoading.disabled = true;
         email.disabled = true;
         password.disabled = true;
@@ -53,4 +52,5 @@ function init() {
             }
         }, 1000);
     }
+    
 }
