@@ -23,35 +23,39 @@
                 Es muy rapido y sencillo!
             </p>
             <p class="info-required-fields text-center">
-                (*) Campos obligatorios
+                ( * ) Campos obligatorios
             </p>
-            <div class="form-container fw-bold mt-2">
+            <div class="form-container mt-2">
                 <form id="register-form">
-                    <div class="mb-3 col-8 m-auto">
-                        <label for="email" class="form-label">Correo <span class="required">(*)</span></label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                            placeholder="Ingresar Correo Electronico" required>
-                    </div>
-                    <div class="mb-3 col-8 m-auto">
-                        <label for="password" class="form-label">Contraseña <span class="required">(*)</span></label>
-                        <input type="password" class="form-control" id="password-repeat"
-                            placeholder="Ingresar contraseña" minlength="8" maxlength="14" required>
-                    </div>
-                    <div class="mb-3 col-8 m-auto">
-                        <label for="password-repeat" class="form-label">Repetir Contraseña <span
-                                class="required">(*)</span></label>
-                        <input type="password" class="form-control" id="password-repeat"
-                            placeholder="Repetir contraseña" minlength="8" maxlength="14" required>
-                    </div>
-                    <div class="mb-3 col-8 m-auto">
-                        <label for="username" class="form-label">Nombre de Usuario <span
-                                class="required">(*)</span></label>
-                        <input type="text" class="form-control" id="username" placeholder="Ingresar nombre de usuario"
+                    <div class="mb-2 col-8 m-auto">
+                        <label for="username" class="form-label">Nombre Completo <span
+                                class="required">*</span></label>
+                        <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre completo"
                             required>
+                        <p class="error-text hidden" id="fullname-error">Error con el nombre</p>
+                    </div>
+                    <div class="mb-2 col-8 m-auto">
+                        <label for="email" class="form-label">Correo <span class="required">*</span></label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="Ingrese su correo electronico" required>
+                        <p class="error-text hidden" id="email-error">Error en el correo electrónico</p>
+                    </div>
+                    <div class="mb-2 col-8 m-auto">
+                        <label for="password" class="form-label">Contraseña <span class="required">*</span></label>
+                        <input type="password" class="form-control" id="password"
+                            placeholder="Ingrese su contraseña" minlength="8" maxlength="14" required>
+                        <p class="error-text hidden" id="password-error">Error con la contraseña</p>
+                    </div>
+                    <div class="mb-2 col-8 m-auto">
+                        <label for="password-repeat" class="form-label">Repetir Contraseña <span
+                                class="required">*</span></label>
+                        <input type="password" class="form-control" id="password-repeat"
+                            placeholder="Repita su contraseña" minlength="8" maxlength="14" required>
+                        <p class="error-text hidden" id="password-repeat-error">Las contraseñas no coinciden</p>
                     </div>
                     <div class="mb-3 col-8 m-auto">
                         <label for="birth" class="form-label">Fecha de Nacimiento <span
-                                class="required">(*)</span></label>
+                                class="required">*</span></label>
                         <input type="date" class="form-control" id="birth" required>
                     </div>
                     <div class="mb-3 col-8 m-auto">
@@ -79,6 +83,7 @@
                             </div>
                         </div>
                     </div>
+                    <p class="error-text hidden text-center" id="register-error">Error al registrarse</p>
                 </form>
             </div>
             <div class="mb-5 col-8 my-5 m-auto">
@@ -86,9 +91,6 @@
             </div>
         </div>
     </div>
-
-    </div>
-
 </body>
 
 </html>

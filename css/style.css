@@ -134,3 +134,7 @@ header h2 {
     background-color: white;
     width: fit-content;
 }
+
+.creation-account-successful {
+    color: green;
+}
