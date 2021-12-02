@@ -73,6 +73,10 @@ header h2 {
     visibility: hidden;
 }
 
+.invisible {
+    display: none;
+}
+
 #loading-section {
     display: inline-block;
 }
@@ -106,4 +110,27 @@ header h2 {
 
 .required {
     color: red;
+}
+.avatar-image {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem !important;
+    display: inline;
+    overflow: hidden !important;
+}
+
+.publication-carousel {
+    height: 15rem;
+    overflow-y: hidden;
+}
+
+.share-alert {
+    position: fixed;
+    bottom: 10px;
+    left: 17%;
+    border-radius: 10px;
+    border: solid black 1px;
+    padding: 10px;
+    background-color: white;
+    width: fit-content;
 }
