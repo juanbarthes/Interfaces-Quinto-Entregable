@@ -179,3 +179,8 @@ header h2 {
     font-weight: bold;
     color: white;
 }
+
+.btn-logout, .btn-logout:hover, .btn-logout:focus, .btn-logout:active {
+    text-decoration: none;
+    color: inherit;
+}
