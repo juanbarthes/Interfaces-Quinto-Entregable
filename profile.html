@@ -15,6 +15,7 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/feed.js"></script>
+    <script src="js/profile.js"></script>
 </head>
 
 <body>
@@ -61,12 +62,12 @@
             <div class="mt-2 d-flex align-items-center justify-content-around border-bottom mb-2">
 
                 <div>
-                    <i class="fas fa-align-left card-icon"></i>
-                    <span class="fw-bold">Publicaciones</span>
+                    <i class="far fa-newspaper card-icon" id="posts-icon"></i>
+                    <span class="fw-bold" id="posts-span">Publicaciones</span>
                 </div>
                 <div>
-                    <i class="far fa-address-card card-icon"></i>
-                    <span class="fw-bold">Más Sobre Mi</span>
+                    <i class="far fa-address-card card-icon" id="more-info-icon"></i>
+                    <span class="fw-bold" id="more-info-span">Más Sobre Mi</span>
                 </div>
             </div>
             <section class="more-info invisible">
@@ -120,10 +121,6 @@
                         </div>
                         <div class="mx-2">
                             <i class="far fa-comment card-icon"></i>
-                            <span class="fw-bold">5</span>
-                        </div>
-                        <div class="mx-2">
-                            <i class="far fa-share-square card-icon"></i>
                             <span class="fw-bold">5</span>
                         </div>
                     </div>
@@ -199,10 +196,6 @@
                         <div class="mx-2">
                             <i class="far fa-comment card-icon"></i>
                             <span class="fw-bold">5</span>
-                        </div>
-                        <div class="mx-2">
-                            <i class="far fa-share-square card-icon"></i>
-                            <span class="fw-bold">23</span>
                         </div>
                     </div>
                     <div class="border">
