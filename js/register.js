@@ -16,7 +16,7 @@ function init() {
     /**
      * Events
      */
-     registerForm.addEventListener('submit', function (e) {
+    registerForm.addEventListener('submit', function (e) {
         if (!passwordError.classList.contains('hidden')) {
             passwordError.classList.add('hidden');
         }
@@ -52,5 +52,5 @@ function init() {
             }
         }, 1000);
     }
-    
+
 }
