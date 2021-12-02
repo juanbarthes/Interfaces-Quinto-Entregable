@@ -4,8 +4,7 @@ function initScript() {
     "use strict";
     /**
      * Variables
-     */
-
+     */    
     //Constantes con los className de los iconos
     const likeIcon = "far fa-thumbs-up card-icon";
     const likeIconActive = "fas fa-thumbs-up card-icon";
@@ -14,13 +13,18 @@ function initScript() {
     const commentIcon = "far fa-comment card-icon";
     const commentIconActive = "fas fa-comment card-icon";
     const shareIcon = "far fa-share-square card-icon";
+    
     let cardIcons = [];
+
+    let sharedConfirmation = document.querySelector(".share-alert");
+
     cardIcons = document.querySelectorAll(".card-icon");
     cardIcons.forEach(icon => {
         icon.addEventListener("click", (e) => {
             iconActivate(e)
         });
     });
+
 
     /**
      * Funciones
@@ -30,7 +34,10 @@ function initScript() {
             showComments(event.target, event.target.parentNode);
         } else {
             if (event.target.className == shareIcon) {
-               showSharedConfirmation() 
+               let shareCount = event.target.parentNode.querySelector("span");
+               let update = parseInt(shareCount.innerHTML) + 1;
+               shareCount.innerHTML = update; 
+                showSharedConfirmation() 
             } else {
                 switchIcon(event.target);
             }
@@ -41,7 +48,7 @@ function initScript() {
         let commentBox = node.parentNode.parentNode.querySelector(".comment-box");
         if (commentBox) {
             switchIcon(target);
-            commentBox.classList.toggle(".hidden");
+            commentBox.classList.toggle("invisible");
         }
     }
 
@@ -80,5 +87,12 @@ function initScript() {
         let count = node.parentNode.querySelector("span");
         let update = parseInt(count.innerHTML) + number;
         count.innerHTML = update;
+    }
+
+    function showSharedConfirmation() {
+        sharedConfirmation.classList.toggle("hidden");
+        setTimeout(() => {
+            sharedConfirmation.classList.toggle("hidden");
+        }, 2000);
     }
 }

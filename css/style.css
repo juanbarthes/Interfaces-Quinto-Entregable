@@ -78,6 +78,10 @@ header h2 {
     visibility: hidden;
 }
 
+.invisible {
+    display: none;
+}
+
 #loading-section {
     display: inline-block;
 }
@@ -112,8 +116,13 @@ header h2 {
     overflow-y: hidden;
 }
 
-.card-text {
-    
-    
+.share-alert {
+    position: fixed;
+    bottom: 10px;
+    left: 17%;
+    border-radius: 10px;
+    border: solid black 1px;
+    padding: 10px;
+    background-color: white;
+    width: fit-content;
 }
-
