@@ -98,6 +98,10 @@ header h2 {
     max-height: fit-content;
 }
 
+.icon-color {
+    color: #01a4e4;
+}
+
 .info-required-fields {
     color: red;
     font-size: 13px;
@@ -301,4 +305,42 @@ header h2 {
     height: 20px;
     background: white;
     border-bottom-left-radius: 10px;
+}
+
+
+.chat__form {
+    background-color: #e0e0e0;
+}
+
+.chat-form {
+    width: 75%;
+    margin: 0 auto;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.input-chat-form {
+    height: 40px;
+    font-size: 16px;
+    min-width: 90%;
+    padding-left: 15px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: none;
+}
+
+.button-chat-form {
+    width: 10%;
+    height: 100%;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
 }
