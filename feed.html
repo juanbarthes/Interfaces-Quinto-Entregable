@@ -13,11 +13,12 @@
     </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="js/search.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container px-0 column">
+    <div class="container px-0">
         <div id="sticky-top">
             <header>
                 <h2>SocialVets</h2>
@@ -29,212 +30,296 @@
                 <a href="profile.html"><i class="fas fa-user-circle icon"></i></a>
             </nav>
         </div>
-        <div class="px-1 mt-2 feed">
-            <div class="new-post bg-light shadow rounded">
-                <div class="d-flex align-items-center">
-                    <img src="images/avatars/Harvey Specter.jpg" alt="avatar" class="post-avatar col-2 m-0 p-0 m-2">
-                <h5 class="card-title mb-0 mx-2">Harvey Specter</h5>
-                </div>
-                <div class="input-group">
-                    <textarea class="form-control" placeholder="Comparte algo con la comunidad..."></textarea>
-                </div>
-                <div>
-                    <div class="d-flex justify-content-around align-items-center p-2">
-                        <button class="btn">
-                            <i class="fas fa-photo-video card-icon"></i>
-                        </button>
-                        <div>
-                            <button class="btn btn-sm post-control text-white">Publicar</button>
-                            <button class="btn btn-sm post-control bg-danger btn-danger" id="cancel-post">Cancelar</button>
+        
+        <div class="desktop-container d-flex">
+            <div class="px-1 mt-2 feed">    
+                <div class="new-post bg-light shadow rounded">
+                    <div class="d-flex align-items-center">
+                        <img src="images/avatars/Harvey Specter.jpg" alt="avatar" class="post-avatar col-2 m-0 p-0 m-2">
+                    <h5 class="card-title mb-0 mx-2">Harvey Specter</h5>
+                    </div>
+                    <div class="input-group">
+                        <textarea class="form-control" placeholder="Comparte algo con la comunidad..."></textarea>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-around align-items-center p-2">
+                            <button class="btn">
+                                <i class="fas fa-photo-video card-icon"></i>
+                            </button>
+                            <div>
+                                <button class="btn btn-sm post-control text-white">Publicar</button>
+                                <button class="btn btn-sm post-control bg-danger btn-danger" id="cancel-post">Cancelar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="card m-auto my-2" style="width: 100%;">
+                    <div class="card">
+                        <div class="card-header m-auto row" style="width: 100%;">
+                            <img src="images/avatars/Harvey Specter.jpg" alt="avatar" class="avatar-image col-2 m-0 p-0">
+                            <div class="col-8 align-self-center">
+                                <h5 class="card-title mb-0">Harvey Specter</h5>
+                                <p class="card-text mt-0 pt-0 time-text">Hace 3hs.</p>
+                            </div>
+                        </div>
+                        <p class="card-text m-2">Querer adquirir experiencia solo con la teoria es como intentar quitarse el
+                            hambre leyendo el menú.</p>
+                    </div>
+                    <img class="card-img-top mb-1 publication-carousel" src="images/Golden cachorro.jpg" alt="Card image cap">
+    
+                    <div class="border border-top-0 d-flex align-items-center">
+                        <div class="mx-2 interaction">
+                            <i class="far fa-thumbs-up card-icon"></i>
+                            <span class="fw-bold">300</span>
+                        </div>
+                        <div class="mx-2 interaction">
+                            <i class="far fa-thumbs-down card-icon"></i>
+                            <span class="fw-bold">1</span>
+                        </div>
+                        <div class="mx-2 interaction">
+                            <i class="far fa-comment card-icon"></i>
+                            <span class="fw-bold">5</span>
+                        </div>
+                        <div class="mx-2 interaction">
+                            <i class="far fa-share-square card-icon"></i>
+                            <span class="fw-bold">5</span>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <input type="text" name="comment-input" id="comment-input"
+                            class="form-control bg-light fw-bold d-inline" placeholder="Escribe un comentario..."
+                            style="width: 90%;">
+                        <i class="fas fa-arrow-alt-circle-right card-icon mx-1"></i>
+                    </div>
+                    <div class="comment-box invisible">
+                        <ul class="list-group list-group-flush bg-light border">
+                            <li class="list-group-item"><div>
+                                <p class="h6">Louis Litt</p>
+                                <p>Estoy cansado de que te robes mis clientes Harvey</p>
+                            </div></li>
+                            <li class="list-group-item"><div>
+                                <p class="h6">Martin Prince</p>
+                                <p>Me encanta la foto de tu perro Harvey!</p>
+                            </div></li>
+                            <li class="list-group-item"><div>
+                                <p class="h6">Hanna Michels</p>
+                                <p>Cuanta Razon Harvey!</p>
+                            </div></li>
+                            <li class="list-group-item"><div>
+                                <p class="h6">Rodolfo Castaño</p>
+                                <p>Mi padre decia algo parecido, tenia buenas notas y pense que con eso bastaba, luego de graduarme y conseguir mi primer trabajo entendi a que se referia.</p>
+                            </div></li>
+                            <li class="list-group-item"><div>
+                                <p class="h6">Jason Pitoco</p>
+                                <p>Exijo saber como se llama la hermosa criatura de la foto.</p>
+                            </div></li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="card m-auto my-2" style="width: 100%;">
+                    <div class="card">
+                        <div class="card-header m-auto row" style="width: 100%;">
+                            <img src="images/avatars/Maria.jpg" alt="avatar" class="avatar-image col-2 m-0 p-0">
+                            <div class="col-8 align-self-center">
+                                <h5 class="card-title mb-0">María Velez</h5>
+                                <p class="card-text mt-0 pt-0 time-text">Hace 12hs.</p>
+                            </div>
+                        </div>
+                        <p class="card-text m-2"> En el collar o el arnés que le pongas a tu perro puedes incluir una chapa
+                            metálica con su nombre y tu número de teléfono. Aunque lo hayas educado muy bien y extremes las
+                            precauciones, tu perro puede escaparse. Para quedarte más tranquilo, procura que esté
+                            identificado con este tipo de chapas, así cualquier persona que lo encuentre puede localizarte
+                            fácilmente para devolvértelo.</p>
+                    </div>
+                    <div class="border border-top-0 d-flex align-items-center">
+                        <div class="mx-2 interaction">
+                            <i class="far fa-thumbs-up card-icon"></i>
+                            <span class="fw-bold">14</span>
+                        </div>
+                        <div class="mx-2 interaction">
+                            <i class="far fa-thumbs-down card-icon"></i>
+                            <span class="fw-bold">2</span>
+                        </div>
+                        <div class="mx-2 interaction">
+                            <i class="far fa-comment card-icon"></i>
+                            <span class="fw-bold">0</span>
+                        </div>
+                        <div class="mx-2 interaction">
+                            <i class="far fa-share-square card-icon"></i>
+                            <span class="fw-bold">5</span>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <input type="text" name="comment-input" id="comment-input"
+                            class="form-control bg-light fw-bold d-inline" placeholder="Escribe un comentario..."
+                            style="width: 90%;">
+                        <i class="fas fa-arrow-alt-circle-right card-icon mx-1"></i>
+                    </div>
+    
+                </div>
+                <div class="card m-auto my-2" style="width: 100%;">
+                    <div class="card">
+                        <div class="card-header m-auto row" style="width: 100%;">
+                            <div class="col-8 align-self-center">
+                                <h5 class="card-title mb-0">Alkampo Veterinaria</h5>
+                                <p class="card-text mt-0 pt-0 time-text">Publicidad</p>
+                            </div>
+                        </div>
+                        <p class="card-text m-2">7 años de trayectoria, siempre trabajando para dar la mejor calidad en atencion a nuestros clientes.</p>
+                    </div>
+                        <img class="card-img-top mb-1 d-block publication-carousel" src="images/veterinaria.jpg" height="250">
+                    
+    
+                </div>
+                <div class="card m-auto my-2" style="width: 100%;">
+                    <div class="card">
+                        <div class="card-header m-auto row" style="width: 100%;">
+                            <img src="images/avatars/Natalia Fernandez.jpg" alt="avatar" class="avatar-image m-0 p-0">
+                            <div class="col-8 align-self-center">
+                                <h5 class="card-title mb-0">Natalia Fernández</h5>
+                                <p class="card-text mt-0 pt-0 time-text">ayer.</p>
+                            </div>
+                        </div>
+                        <p class="card-text m-2"> Algunos amiguitos con los que estuvimos trabajando esta semana</p>
+                    </div>
+                    <div class="card-img-top publication-carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="images/XQRUL6MZE5GUTA5OLPSXSAI2MM.jpg" class="d-block w-100" alt="..." height="250">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/28374583-corte-de-uñas-de-los-pies-del-veterinario-de-perro-aislado-en-fondo-blanco.jpg" class="d-block w-100" alt="..." height="250">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/4306008.jpg" class="d-block w-100" alt="..." height="250">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="border border-top-0 d-flex align-items-center">
+                        <div class="mx-2 interaction">
+                            <i class="far fa-thumbs-up card-icon"></i>
+                            <span class="fw-bold">14</span>
+                        </div>
+                        <div class="mx-2 interaction">
+                            <i class="far fa-thumbs-down card-icon"></i>
+                            <span class="fw-bold">2</span>
+                        </div>
+                        <div class="mx-2 interaction">
+                            <i class="far fa-comment card-icon"></i>
+                            <span class="fw-bold">0</span>
+                        </div>
+                        <div class="mx-2 interaction">
+                            <i class="far fa-share-square card-icon"></i>
+                            <span class="fw-bold">5</span>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <input type="text" name="comment-input" id="comment-input"
+                            class="form-control bg-light fw-bold d-inline" placeholder="Escribe un comentario..."
+                            style="width: 90%;">
+                        <i class="fas fa-arrow-alt-circle-right card-icon mx-1"></i>
+                    </div>
+    
+                </div>
+    
             </div>
+            <div class="recomendations pt-4">
+                <aside>
+                    <h2 class="h4 text-center">Recomendaciones</h2>
+                    <ul class=" result-list list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="result-item d-flex justify-content-between py-2">
+                                <div class="d-flex">
+                                    <img src="images/avatars/Natalia Fernandez.jpg" alt="" class="results-image">
+                                    <div class="mx-2">
+                                        <h5 class="my-0">Natalia Fernández</h5>
+                                        <p class="my-0 fw-bold"><small>Veterinaria</small></p>
+                                    </div>
+                                </div>
             
-            <div class="card m-auto my-2" style="width: 100%;">
-                <div class="card">
-                    <div class="card-header m-auto row" style="width: 100%;">
-                        <img src="images/avatars/Harvey Specter.jpg" alt="avatar" class="avatar-image col-2 m-0 p-0">
-                        <div class="col-8 align-self-center">
-                            <h5 class="card-title mb-0">Harvey Specter</h5>
-                            <p class="card-text mt-0 pt-0 time-text">Hace 3hs.</p>
-                        </div>
-                    </div>
-                    <p class="card-text m-2">Querer adquirir experiencia solo con la teoria es como intentar quitarse el
-                        hambre leyendo el menú.</p>
-                </div>
-                <img class="card-img-top mb-1 publication-carousel" src="images/Golden cachorro.jpg" alt="Card image cap">
-
-                <div class="border border-top-0 d-flex align-items-center">
-                    <div class="mx-2">
-                        <i class="far fa-thumbs-up card-icon"></i>
-                        <span class="fw-bold">300</span>
-                    </div>
-                    <div class="mx-2">
-                        <i class="far fa-thumbs-down card-icon"></i>
-                        <span class="fw-bold">1</span>
-                    </div>
-                    <div class="mx-2">
-                        <i class="far fa-comment card-icon"></i>
-                        <span class="fw-bold">5</span>
-                    </div>
-                    <div class="mx-2">
-                        <i class="far fa-share-square card-icon"></i>
-                        <span class="fw-bold">5</span>
-                    </div>
-                </div>
-                <div class="border">
-                    <input type="text" name="comment-input" id="comment-input"
-                        class="form-control bg-light fw-bold d-inline" placeholder="Escribe un comentario..."
-                        style="width: 90%;">
-                    <i class="fas fa-arrow-alt-circle-right card-icon mx-1"></i>
-                </div>
-                <div class="comment-box invisible">
-                    <ul class="list-group list-group-flush bg-light border">
-                        <li class="list-group-item"><div>
-                            <p class="h6">Louis Litt</p>
-                            <p>Estoy cansado de que te robes mis clientes Harvey</p>
-                        </div></li>
-                        <li class="list-group-item"><div>
-                            <p class="h6">Martin Prince</p>
-                            <p>Me encanta la foto de tu perro Harvey!</p>
-                        </div></li>
-                        <li class="list-group-item"><div>
-                            <p class="h6">Hanna Michels</p>
-                            <p>Cuanta Razon Harvey!</p>
-                        </div></li>
-                        <li class="list-group-item"><div>
-                            <p class="h6">Rodolfo Castaño</p>
-                            <p>Mi padre decia algo parecido, tenia buenas notas y pense que con eso bastaba, luego de graduarme y conseguir mi primer trabajo entendi a que se referia.</p>
-                        </div></li>
-                        <li class="list-group-item"><div>
-                            <p class="h6">Jason Pitoco</p>
-                            <p>Exijo saber como se llama la hermosa criatura de la foto.</p>
-                        </div></li>
-                      </ul>
-                </div>
+                                <button class="btn text-white post-control follow-btn">Seguir</button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="result-item d-flex justify-content-between py-2">
+                                <div class="d-flex">
+                                    <img src="images/avatars/natalia-dambe.jpg" alt="" class="results-image">
+                                    <div class="mx-2">
+                                        <h5 class="my-0">Natalia Dambe</h5>
+                                        <p class="my-0 fw-bold"><small>Veterinaria</small></p>
+                                    </div>
+                                </div>
+            
+                                <button class="btn text-white post-control follow-btn">Seguir</button>
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <div class="result-item d-flex justify-content-between py-2">
+                                <div class="d-flex">
+                                    <img src="images/avatars/jackie-chan.jpg" alt="" class="results-image">
+                                    <div class="mx-2">
+                                        <h5 class="my-0">Jackie Chan</h5>
+                                        <p class="my-0 fw-bold"><small>Veterinario</small></p>
+                                    </div>
+                                </div>
+                                <button class="btn text-white post-control follow-btn">Seguir</button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="result-item d-flex justify-content-between py-2">
+                                <div class="d-flex">
+                                    <img src="images/avatars/louis litt.jpg" alt="" class="results-image">
+                                    <div class="mx-2">
+                                        <h5 class="my-0">Louis Litt</h5>
+                                        <p class="my-0 fw-bold"><small>Veterinario</small></p>
+                                    </div>
+                                </div>
+                                <button class="btn text-white post-control follow-btn">Seguir</button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="result-item d-flex justify-content-between py-2">
+                                <div class="d-flex">
+                                    <img src="images/avatars/Ricardo Vich.jpg" alt="" class="results-image">
+                                    <div class="mx-2">
+                                        <h5 class="my-0">Ricardo Vitch</h5>
+                                        <p class="my-0 fw-bold"><small>Usuario</small></p>
+                                    </div>
+                                </div>
+                                <button class="btn text-white post-control follow-btn">Seguir</button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="result-item d-flex justify-content-between py-2">
+                                <div class="d-flex">
+                                    <img src="images/avatars/Jason Pitoco.jpg" alt="" class="results-image">
+                                    <div class="mx-2">
+                                        <h5 class="my-0">Jason Pitoco</h5>
+                                        <p class="my-0 fw-bold"><small>Usuario</small></p>
+                                    </div>
+                                </div>
+                                <button class="btn text-white post-control follow-btn">Seguir</button>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
             </div>
-            <div class="card m-auto my-2" style="width: 100%;">
-                <div class="card">
-                    <div class="card-header m-auto row" style="width: 100%;">
-                        <img src="images/avatars/Maria.jpg" alt="avatar" class="avatar-image col-2 m-0 p-0">
-                        <div class="col-8 align-self-center">
-                            <h5 class="card-title mb-0">María Velez</h5>
-                            <p class="card-text mt-0 pt-0 time-text">Hace 12hs.</p>
-                        </div>
-                    </div>
-                    <p class="card-text m-2"> En el collar o el arnés que le pongas a tu perro puedes incluir una chapa
-                        metálica con su nombre y tu número de teléfono. Aunque lo hayas educado muy bien y extremes las
-                        precauciones, tu perro puede escaparse. Para quedarte más tranquilo, procura que esté
-                        identificado con este tipo de chapas, así cualquier persona que lo encuentre puede localizarte
-                        fácilmente para devolvértelo.</p>
-                </div>
-                <div class="border border-top-0 d-flex align-items-center">
-                    <div class="mx-2">
-                        <i class="far fa-thumbs-up card-icon"></i>
-                        <span class="fw-bold">14</span>
-                    </div>
-                    <div class="mx-2">
-                        <i class="far fa-thumbs-down card-icon"></i>
-                        <span class="fw-bold">2</span>
-                    </div>
-                    <div class="mx-2">
-                        <i class="far fa-comment card-icon"></i>
-                        <span class="fw-bold">0</span>
-                    </div>
-                    <div class="mx-2">
-                        <i class="far fa-share-square card-icon"></i>
-                        <span class="fw-bold">5</span>
-                    </div>
-                </div>
-                <div class="border">
-                    <input type="text" name="comment-input" id="comment-input"
-                        class="form-control bg-light fw-bold d-inline" placeholder="Escribe un comentario..."
-                        style="width: 90%;">
-                    <i class="fas fa-arrow-alt-circle-right card-icon mx-1"></i>
-                </div>
-
-            </div>
-            <div class="card m-auto my-2" style="width: 100%;">
-                <div class="card">
-                    <div class="card-header m-auto row" style="width: 100%;">
-                        <div class="col-8 align-self-center">
-                            <h5 class="card-title mb-0">Alkampo Veterinaria</h5>
-                            <p class="card-text mt-0 pt-0 time-text">Publicidad</p>
-                        </div>
-                    </div>
-                    <p class="card-text m-2">7 años de trayectoria, siempre trabajando para dar la mejor calidad en atencion a nuestros clientes.</p>
-                </div>
-                    <img class="card-img-top mb-1 d-block w-100" src="images/veterinaria.jpg" height="250">
-                
-
-            </div>
-            <div class="card m-auto my-2" style="width: 100%;">
-                <div class="card">
-                    <div class="card-header m-auto row" style="width: 100%;">
-                        <img src="images/avatars/Natalia Fernandez.jpg" alt="avatar" class="avatar-image m-0 p-0">
-                        <div class="col-8 align-self-center">
-                            <h5 class="card-title mb-0">Natalia Fernández</h5>
-                            <p class="card-text mt-0 pt-0 time-text">ayer.</p>
-                        </div>
-                    </div>
-                    <p class="card-text m-2"> Algunos amiguitos con los que estuvimos trabajando esta semana</p>
-                </div>
-                <div class="card-img-top publication-carousel">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="images/XQRUL6MZE5GUTA5OLPSXSAI2MM.jpg" class="d-block w-100" alt="..." height="250">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/28374583-corte-de-uñas-de-los-pies-del-veterinario-de-perro-aislado-en-fondo-blanco.jpg" class="d-block w-100" alt="..." height="250">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/4306008.jpg" class="d-block w-100" alt="..." height="250">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                </div>
-                <div class="border border-top-0 d-flex align-items-center">
-                    <div class="mx-2">
-                        <i class="far fa-thumbs-up card-icon"></i>
-                        <span class="fw-bold">14</span>
-                    </div>
-                    <div class="mx-2">
-                        <i class="far fa-thumbs-down card-icon"></i>
-                        <span class="fw-bold">2</span>
-                    </div>
-                    <div class="mx-2">
-                        <i class="far fa-comment card-icon"></i>
-                        <span class="fw-bold">0</span>
-                    </div>
-                    <div class="mx-2">
-                        <i class="far fa-share-square card-icon"></i>
-                        <span class="fw-bold">5</span>
-                    </div>
-                </div>
-                <div class="border">
-                    <input type="text" name="comment-input" id="comment-input"
-                        class="form-control bg-light fw-bold d-inline" placeholder="Escribe un comentario..."
-                        style="width: 90%;">
-                    <i class="fas fa-arrow-alt-circle-right card-icon mx-1"></i>
-                </div>
-
-            </div>
-
         </div>
         <div class="share-alert hidden">
             <i class="fas fa-check-circle card-icon"></i>

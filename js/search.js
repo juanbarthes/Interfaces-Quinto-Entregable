@@ -11,7 +11,7 @@ function initScript() {
      * Variables
      */
     let resultList = document.querySelectorAll(".list-group-item");
-    let followBtns = document.querySelectorAll(".post-control");
+    let followBtns = document.querySelectorAll(".follow-btn");
 
     let searchIcon = document.querySelector("#search-icon");
     let searchBar = document.querySelector("#search-bar");

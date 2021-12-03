@@ -121,6 +121,11 @@ header h2 {
     max-height: fit-content;
 }
 
+.interaction:hover {
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+}
+
 .icon-color {
     color: #01a4e4;
 }
@@ -429,5 +434,75 @@ header h2 {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+.recomendations {
+    display: none;
+}
+
+@media (min-width:1280px) {
+    body {
+        background-color: gray;
+    }
+    .container {
+        background-color: white;
+        width: 50%;
+    }
+    .posts {
+        margin: auto;
+        padding-bottom: 5px;
+        width: 70%;
+    }
+
+    .publication-carousel {
+        width: 80%;
+        margin: auto;
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .desktop-controls {
+        margin: auto;
+        width: 68%;
+    }
+
+    .general-info {
+        width: 70%;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .more-info {
+        width: 70%;
+        margin: auto;
+        border-left: 2px solid rgb(204, 204, 204);
+        border-right: 2px solid rgb(204, 204, 204);
+        border-radius: 2px;
+        padding-bottom: 5px;
+    }
+
+    .fa-arrow-alt-circle-right {
+        display: none;
+    }
+
+    .posts input, .feed input {
+        width: 100% !important;
+    }
+
+    .recomendations {
+        display: inline-block;
+        padding-top: 5px;
+        padding-left: 5px;
+        width: 45%;
+    }
+
+    .feed {
+        width: 70%;
+    }
+
+    .share-alert {
+        left: 30%;
     }
 }
