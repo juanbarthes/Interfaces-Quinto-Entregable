@@ -16,17 +16,22 @@ function initScript() {
     let moreInfo = document.querySelector(".more-info");
     let activeSection = postsIcon.id;
 
+    setTimeout(() => {
+        document.querySelector("#loading-label").classList.add("hidden");
+        document.querySelector("#sticky-top").classList.add("sticky-top");
+    }, 1000);
+
     /**
      * Eventos 
      */
-     postsIcon.addEventListener("click", (e) => {
+    postsIcon.addEventListener("click", (e) => {
         switchSection(e.target)
     });
 
     postSpan.addEventListener("click", (e) => {
         switchSection(e.target.parentNode.querySelector("i"))
     });
-    
+
     moreInfoIcon.addEventListener("click", (e) => {
         switchSection(e.target)
     });

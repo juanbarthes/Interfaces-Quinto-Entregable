@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", initScript);
 
 function initScript() {
+
+    setTimeout(() => {
+        document.querySelector("#loading-label").classList.add("hidden");
+        document.querySelector("#sticky-top").classList.add("sticky-top");
+    }, 1000);
+
     /**
      * Variables
      */

@@ -344,3 +344,60 @@ header h2 {
     text-transform: uppercase;
     cursor: pointer;
 }
+
+.loading,
+.modalMensaje {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.spinner-wrapper {
+    font-size: 75px;
+    color: #01a4e4;
+}
+
+.lds-dual-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #01a4e4;
+    border-color: #01a4e4 transparent #01a4e4 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
