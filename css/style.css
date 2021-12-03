@@ -9,6 +9,29 @@ body {
     background-position-y: 3px;
     background-image: url(../images/fondo-land-2.jpeg);
     margin: 0;
+    animation-duration: 30s;
+    animation-name: zoom-in-out;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes zoom-in-out {
+    0% {
+       background-size: 150%; 
+    }
+    
+    25% {
+        background-size: 140%;
+    }
+    50% {
+        background-size: 120%;
+    }
+    75% {
+        background-size: 140%;
+    }
+    100% {
+        background-size: 150%;
+    }
 }
 
 .form-label {
