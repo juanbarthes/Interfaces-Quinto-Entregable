@@ -224,6 +224,11 @@ header h2 {
     color: inherit;
 }
 
+.chats:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 #search-bar {
     max-width: 87%;
 }
@@ -231,6 +236,8 @@ header h2 {
 .chat {
     margin-left: 20px;
 }
+
+
 
 .chat-date {
     color: #01a4e4;
