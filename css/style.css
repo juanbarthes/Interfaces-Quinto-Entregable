@@ -120,6 +120,14 @@ header h2 {
     overflow: hidden !important;
 }
 
+.results-image {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem !important;
+    display: inline;
+    overflow: hidden !important;
+}
+
 .post-control {
     background-color: #20ace4;
     color: white;
@@ -183,4 +191,8 @@ header h2 {
 .btn-logout, .btn-logout:hover, .btn-logout:focus, .btn-logout:active {
     text-decoration: none;
     color: inherit;
+}
+
+#search-bar {
+    max-width: 87%;
 }
