@@ -196,3 +196,8 @@ header h2 {
 #search-bar {
     max-width: 87%;
 }
+
+.chat {
+    margin-left: 20px;
+}
+
